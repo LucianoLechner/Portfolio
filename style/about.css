@@ -1,0 +1,129 @@
+.about-me{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+
+    & .container-img{
+        /* border: 1px solid red; */
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-80%);
+
+        & img{
+            width: 60%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    & .about-content{
+        /* border: 1px solid red; */
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 10px;
+        transform: translateX(120%);
+
+
+        & h2{
+            text-align: center;
+            font-size: 35px;
+            font-weight: 800;
+
+            & span{
+                color: #00abf0;
+            }
+        }
+
+        & p {
+            font-weight: 200;
+            text-align: justify;
+            padding: 0 30px;
+            color: #c1c1c1;
+        }
+
+        & .skills{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 1px solid yellow; */
+            gap: 30px;
+            width: 100%;
+            padding: 0 30px;
+
+            & h2{
+                font-weight: 800;
+                font-size: 30px;
+            }
+
+            & .skills-icons{
+                gap: 20px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                place-items: center;
+                justify-items: center;
+                padding: 25px;
+                width: 90%;
+                /* border: 1px solid red; */
+
+                & i{
+                    font-size: 70px;
+                    /* border: 1px solid blue; */
+                }
+
+                & .bxl-html5{
+                    color: #fc4f13;
+                }
+
+                & .bxl-css3{
+                    color: #1892c6;
+                }
+
+                & .bxl-javascript{
+                    color: #ffcb6b;
+                }
+                
+                & .bxl-tailwind-css{
+                    color: #3ebff8;
+                }
+
+                & .bxl-bootstrap{
+                    color: #7f18f9;
+                }
+
+                & .bxl-nodejs{
+                    color: #7ab168;
+                }
+
+                & .bxl-typescript{
+                    color: #087ece;
+                }
+
+                & .bxl-react{
+                    color: #66dbfb;
+                }
+            }
+        }
+    }
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s ease-in;
+}
+
+.show{
+    opacity: 1 !important;
+    transition: all 2s ease-in !important;
+    filter: blur(0) !important;
+    transform: translateX(0) !important;
+    
+}
