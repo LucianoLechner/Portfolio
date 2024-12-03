@@ -3,39 +3,36 @@
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    /* border: 1px solid red; */
 
     & .container-img{
-        /* border: 1px solid red; */
         width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: translateX(-80%);
 
         & img{
             width: 60%;
             height: 50%;
             object-fit: cover;
             border-radius: 50%;
+            filter: brightness(0.8);
+            transform: translateX(-50%);
         }
     }
 
     & .about-content{
-        /* border: 1px solid red; */
         width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 30px;
         padding: 10px;
-        transform: translateX(120%);
-
-
+        
         & h2{
             text-align: center;
             font-size: 35px;
             font-weight: 800;
+            transform: translateX(50%);
 
             & span{
                 color: #00abf0;
@@ -47,20 +44,23 @@
             text-align: justify;
             padding: 0 30px;
             color: #c1c1c1;
+            transform: translateX(50%);
         }
 
         & .skills{
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* border: 1px solid yellow; */
             gap: 30px;
             width: 100%;
             padding: 0 30px;
+            
 
             & h2{
                 font-weight: 800;
                 font-size: 30px;
+                color: #00abf0;
+                transform: translateX(50%);
             }
 
             & .skills-icons{
@@ -71,44 +71,85 @@
                 justify-items: center;
                 padding: 25px;
                 width: 90%;
-                /* border: 1px solid red; */
 
                 & i{
                     font-size: 70px;
-                    /* border: 1px solid blue; */
+                    transform: translateX(50%);
+                    transition: transform 0.3s ease;
+                }
+            
+                & :nth-child(1){
+                    transition-delay: 50ms !important;
                 }
 
-                & .bxl-html5{
+                & :nth-child(2){
+                    transition-delay: 100ms !important;
+                }
+
+                & :nth-child(3){
+                    transition-delay: 150ms !important;
+                }
+
+                & :nth-child(4){
+                    transition-delay: 200ms !important;
+                }
+
+                & :nth-child(5){
+                    transition-delay: 250ms !important;   
+                }
+
+                & :nth-child(6){
+                    transition-delay: 300ms !important;
+                }
+
+                & :nth-child(7){
+                    transition-delay: 350ms !important;
+                }
+
+                & :nth-child(8){
+                    transition-delay: 400ms !important;
+                }
+
+/* 
+                & .bxl-html5:hover{
                     color: #fc4f13;
+                    transition: 0.3s ease;
                 }
 
-                & .bxl-css3{
+                & .bxl-css3:hover{
                     color: #1892c6;
+                    transition: 0.3s ease;
                 }
 
-                & .bxl-javascript{
+                & .bxl-javascript:hover{
                     color: #ffcb6b;
+                    transition: 0.3s ease;
                 }
                 
-                & .bxl-tailwind-css{
+                & .bxl-tailwind-css:hover{
                     color: #3ebff8;
+                    transition: 0.3s ease;
                 }
 
-                & .bxl-bootstrap{
+                & .bxl-bootstrap:hover{
                     color: #7f18f9;
+                    transition: 0.3s ease;
                 }
 
-                & .bxl-nodejs{
+                & .bxl-nodejs:hover{
                     color: #7ab168;
+                    transition: 0.3s ease;
                 }
 
-                & .bxl-typescript{
+                & .bxl-typescript:hover{
                     color: #087ece;
+                    transition: 0.3s ease;
                 }
 
-                & .bxl-react{
+                & .bxl-react:hover{
                     color: #66dbfb;
-                }
+                    transition: 0.3s ease;
+                } */
             }
         }
     }
@@ -117,13 +158,12 @@
 .hidden{
     opacity: 0;
     filter: blur(15px);
-    transition: all 2s ease-in;
+    transition: all 0.3s ease-out;
 }
 
 .show{
     opacity: 1 !important;
-    transition: all 2s ease-in !important;
+    transition: all 0.5s ease-out !important;
     filter: blur(0) !important;
     transform: translateX(0) !important;
-    
 }
