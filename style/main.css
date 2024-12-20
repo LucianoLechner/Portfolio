@@ -15,9 +15,10 @@
     --font-family: "Poppins", sans-serif;
     --a-font: 300 1.25rem/100% var(--font-family);
     --h1-desk: 800 3.75rem/100% var(--font-family);
-    --h1-mobile: 700 2.5rem/100% var(--font-family);
+    --h1-mobile: 700 2rem/100% var(--font-family);
     --title-sm-desk: 800 2.5rem/100% var(--font-family);
     --title-sm-mobile: 700 1.25rem/100% var(--font-family);
+    --a-mobile: 300 1rem/100% var(--font-family);
 }
 
 h1 {
