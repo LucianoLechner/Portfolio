@@ -14,19 +14,23 @@
     <div id="particles-js">
         <header id="home">
             <div class="logo">
-                <img src="./assets/logo.png" alt="img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M7.826 10.083a.784.784 0 0 0-.468-.175h-.701v4.198h.701a.786.786 0 0 0 .469-.175c.155-.117.233-.292.233-.525v-2.798c.001-.233-.079-.408-.234-.525zM19.236 3H4.764C3.791 3 3.002 3.787 3 4.76v14.48c.002.973.791 1.76 1.764 1.76h14.473c.973 0 1.762-.787 1.764-1.76V4.76A1.765 1.765 0 0 0 19.236 3zM9.195 13.414c0 .755-.466 1.901-1.942 1.898H5.389V8.665h1.903c1.424 0 1.902 1.144 1.903 1.899v2.85zm4.045-3.562H11.1v1.544h1.309v1.188H11.1v1.543h2.142v1.188h-2.498a.813.813 0 0 1-.833-.792V9.497a.813.813 0 0 1 .792-.832h2.539l-.002 1.187zm4.165 4.632c-.531 1.235-1.481.99-1.906 0l-1.548-5.818h1.309l1.193 4.569 1.188-4.569h1.31l-1.546 5.818z"></path></svg>
             </div>
-            <nav class="nav-bar">
+            <nav class="">
                 <a href="#home">Início</a>
                 <a href="#About">Sobre</a>
                 <a href="#projects">Projetos</a>
                 <a href="#">Contato</a>
             </nav>
-            <div class="language-container">
-                <select name="" id="language">
-                    <option value="Portuguese" selected>Português</option>
-                    <option value="English">Inglês</option>
-                </select>
+            <div class="container-language">
+                <div class="language">
+                    <input type="radio" name="language" id="PT-BR" checked>
+                    <label for="PT-BR">PT-BR</label>
+                </div>
+                <div class="language">
+                    <input type="radio" name="language" id="en">
+                    <label for="en">EN</label>
+                </div>
             </div>
         </header>
         <div class="content">
@@ -36,18 +40,12 @@
             </div>
         </div>
         <div class="home-sci">
-            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></i></a>
+            <a href="www.linkedin.com/in/luciano-lechner-03a067195"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/LucianoLechner"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/llucianof_/"><i class='bx bxl-instagram'></i></i></a>
         </div>
     </div>
     <section class="about-me" id="About">
-        <nav class="nav-bar">
-            <a href="#home">Início</a>
-            <a href="#About">Sobre</a>
-            <a href="#projects">Projetos</a>
-            <a href="#">Contato</a>
-        </nav>
         <div class="container-img">
             <img class="hidden" src="./assets/me.jpg" alt="img">
         </div>
@@ -70,12 +68,6 @@
         </div>
     </section>
     <section class="project-section" id="projects">
-        <nav class="nav-bar">
-            <a href="#home">Início</a>
-            <a href="#About">Sobre</a>
-            <a href="#projects">Projetos</a>
-            <a href="#">Contato</a>
-        </nav>
         <div class="project-content">
             <h1 class="hidden">Travelgram</h1>
             <p class="hidden">Desenvolvi um site pessoal de postagens de fotos de viagem para aprimorar meus conhecimentos em HTML e CSS. O projeto inclui uma galeria de imagens organizada, com design responsivo que se adapta a diferentes dispositivos, e foco em uma experiência visual agradável e intuitiva. Esse site reflete minha paixão por explorar novos lugares e compartilhar momentos, além de demonstrar minhas habilidades técnicas no desenvolvimento web.</p>
@@ -87,12 +79,6 @@
         </div>
     </section>
     <section class="project-section">
-        <!-- <nav class="nav-bar">
-            <a href="#home">Início</a>
-            <a href="#About">Sobre</a>
-            <a href="#projects">Projetos</a>
-            <a href="#">Contato</a>
-        </nav> -->
         <div class="preview">
             <img class="hidden" src="./assets/prev-sites/devburguer-prev.png" alt="img">
         </div>
@@ -145,8 +131,8 @@
 
 
 
-    <script src="./particles/particles.js"></script>
-    <script src="./particles/app.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
     <script src="main.js"></script>
 
 </body>
