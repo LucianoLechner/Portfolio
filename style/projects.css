@@ -1,3 +1,50 @@
+.banner {
+    width: 100%;
+    padding-block: 2.5rem;
+    overflow: hidden;
+
+    & .banner-container {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        padding-block: 1rem;
+        background-color: var(--brand-primary);
+
+        & .roll {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            animation: banner 8s linear infinite;
+
+            & span {
+                color: var(--background-color);
+                display: inline-block;
+                white-space: nowrap;
+                width: auto;
+                height: auto;
+                position: relative;
+                font-weight: 600;
+
+                &::before{
+                    content: '/';
+                    position: absolute;
+                    transform: translateX(-0.7rem);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@keyframes banner {
+    to {
+        transform: translateX(-408.5px);
+    }
+    
+}
+
+
+
 
 .project-section{
     position: relative;
