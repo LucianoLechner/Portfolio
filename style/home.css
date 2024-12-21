@@ -192,10 +192,6 @@ input[type="radio"]:checked + label {
 }
 
 @media (width < 45.56rem){
-
-    #particles-js{
-        height: 100%;
-    }
     
     header{
         width: 100%;
